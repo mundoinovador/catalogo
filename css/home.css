@@ -1,0 +1,304 @@
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-block: 2rem;
+  padding-inline: 5%;
+}
+
+main header h1 {
+  color: rgb(125, 45, 48);
+  font-weight: 200;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+main header img {
+  width: 160px;
+  margin-bottom: 0.5rem;
+}
+
+main #categoria-titulo {
+  font-size: 1rem;
+  text-align: left;
+  width: 100%;
+  padding-left: 4%;
+  margin-bottom: 1rem;
+  color: rgb(125, 45, 48);
+  font-weight: 100;
+}
+
+main #icon-wpp {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background-image: url("https://portais.univasf.edu.br/programadegestao/imagens/icon-whatsapp.png/@@images/5799978b-ce74-4807-9b1b-18871680e34b.png");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: all 0.2s;
+}
+
+main #icon-wpp:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+main .categorys {
+  padding-inline: 10%;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  border-bottom: 1px solid rgb(125, 45, 48);
+  border-radius: 2rem;
+  text-align: center;
+}
+
+#products-list {
+  width: 100%;
+
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding-inline: 6%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.product-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid rgb(125, 45, 48);
+  border-radius: 0.8rem;
+  align-items: center;
+  position: relative;
+  padding-block: 2rem;
+  height: 600px;
+}
+
+.card .img-card {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.card .img-card img {
+  border-radius: 0.8rem;
+  width: 200px;
+  max-height: 300px;
+}
+
+.card .desc {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 0.8rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.card .desc h2 {
+  color: rgb(125, 45, 48);
+  font-size: 0.8rem;
+  max-width: 80%;
+}
+
+.card .desc p {
+  font-size: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: rgb(170, 76, 80);
+}
+
+.card .desc #valor-card {
+  text-align: end;
+}
+
+.card .desc a {
+  font-size: 0.5rem;
+  color: rgb(125, 45, 48);
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card .desc a:hover {
+  text-decoration: underline;
+}
+
+.button-categoria {
+  background-color: transparent;
+  padding: 0.6rem 1rem;
+  min-width: 200px;
+  color: rgb(125, 45, 48);
+  font-size: 0.6rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: 1px solid rgb(125, 45, 48);
+  transition: background 0.2s;
+  text-decoration: none;
+}
+
+.button-categoria:hover {
+  background-color: rgb(125, 45, 48);
+  color: white;
+  border: 1px solid rgb(125, 45, 48);
+}
+
+/* =========================
+   HOME - TABLET
+========================= */
+@media (max-width: 1024px) {
+  .card .img-card img {
+    width: 180px;
+  }
+
+  main .categorys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+}
+
+/* =========================
+   HOME - MOBILE
+========================= */
+@media (max-width: 768px) {
+  * {
+    font-size: 1rem;
+  }
+
+  main header {
+    padding-block: 1.5rem;
+  }
+
+  main header img {
+    width: 120px;
+  }
+
+  main header h1 {
+    font-size: 1rem;
+  }
+
+  main .categorys {
+    padding-inline: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .button-categoria {
+    min-width: unset;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-block: 1rem;
+  }
+
+  #products-list {
+    justify-content: center;
+    padding-inline: 4%;
+    gap: 1.2rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    min-height: auto;
+    padding-block: 1.5rem;
+  }
+
+  .card .img-card {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .card .img-card img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+
+  .card .desc {
+    position: relative;
+    padding-inline: 1rem;
+  }
+
+  .card .desc h2 {
+    max-width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .card .desc p,
+  .card .desc a {
+    font-size: 1rem;
+  }
+
+  main #categoria-titulo {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+
+  main #icon-wpp {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+/* =========================
+   HOME - MOBILE PEQUENO
+========================= */
+@media (max-width: 480px) {
+  main header img {
+    width: 100px;
+  }
+
+  .card {
+    border-radius: 1rem;
+  }
+
+  .card .img-card img {
+    max-width: 180px;
+  }
+
+  .card .desc h2 {
+    font-size: 1.2rem;
+  }
+
+  .card .desc p,
+  .card .desc a {
+    font-size: 1rem;
+  }
+
+  .button-categoria {
+    padding: 0.7rem;
+  }
+}

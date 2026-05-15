@@ -1,0 +1,186 @@
+main header {
+  width: 100%;
+  display: flex;
+  padding-block: 1.5rem;
+  padding-inline: 5%;
+}
+
+main header a {
+  font-size: 1rem;
+  color: rgb(125, 45, 48);
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+main header a:hover {
+  text-decoration: underline;
+}
+
+main #icon-wpp {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background-image: url("https://portais.univasf.edu.br/programadegestao/imagens/icon-whatsapp.png/@@images/5799978b-ce74-4807-9b1b-18871680e34b.png");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: all 0.2s;
+}
+
+main #icon-wpp:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+main #produto-info {
+  display: flex;
+  padding-inline: 10%;
+  padding-bottom: 4rem;
+  gap: 4rem;
+}
+
+main #produto-info .info {
+  display: flex;
+  flex-direction: column;
+  padding-block: 2rem;
+}
+
+main #produto-info .info h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: rgb(125, 45, 48);
+}
+
+main #produto-info .info h3 {
+  font-size: 1rem;
+  color: rgb(179, 134, 135);
+  margin-bottom: 0.4rem;
+}
+
+main #produto-info .info p {
+  font-size: 0.8rem;
+  color: rgb(75, 75, 75);
+  margin-bottom: 2rem;
+}
+
+main #produto-info .info a {
+  font-size: 0.8rem;
+  color: rgb(125, 45, 48);
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+main #produto-info .info a:hover {
+  text-decoration: underline;
+}
+
+main #produto-info .foto img {
+  width: 600px;
+  border-radius: 1.3rem;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   ABOUT - TABLET
+========================= */
+@media (max-width: 1024px) {
+  main #produto-info {
+    padding-inline: 5%;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  main #produto-info .foto img {
+    width: 420px;
+  }
+}
+
+/* =========================
+   ABOUT - MOBILE
+========================= */
+@media (max-width: 768px) {
+  * {
+    font-size: 1rem;
+  }
+
+  main header {
+    padding-block: 1rem;
+  }
+
+  main header a {
+    font-size: 0.8rem;
+  }
+
+  main #produto-info {
+    flex-direction: column;
+    padding-inline: 5%;
+    gap: 1.5rem;
+  }
+
+  main #produto-info .foto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  main #produto-info .foto img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 1rem;
+  }
+
+  main #produto-info .info {
+    width: 100%;
+    padding-block: 0;
+  }
+
+  main #produto-info .info h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  main #produto-info .info h3 {
+    font-size: 0.8rem;
+  }
+
+  main #produto-info .info p {
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  main #produto-info .info a {
+    font-size: 0.75rem;
+  }
+
+  main #icon-wpp {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+
+/* =========================
+   ABOUT - MOBILE PEQUENO
+========================= */
+@media (max-width: 480px) {
+  main #produto-info .foto img {
+    max-width: 280px;
+  }
+
+  main #produto-info .info h2 {
+    font-size: 0.9rem;
+  }
+
+  main #produto-info .info p,
+  main #produto-info .info a,
+  main #produto-info .info h3 {
+    font-size: 0.7rem;
+  }
+}

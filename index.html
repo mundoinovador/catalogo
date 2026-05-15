@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Comfortaa", sans-serif;
+        font-style: normal;
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+
+    <link rel="stylesheet" href="css/home.css" />
+    <title>Rafa Doces</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="img/logo.jpeg" alt="" />
+        <h1>Sweet & Sip</h1>
+      </header>
+
+      <div class="categorys">
+        <a href="index.html?categoria=bolo" class="button-categoria"
+          >Bolos de pote</a
+        >
+        <a href="index.html?categoria=dose" class="button-categoria">Doses</a>
+        <a href="index.html?categoria=combo" class="button-categoria">Combos</a>
+        <a href="index.html?categoria=fermentado" class="button-categoria"
+          >Fermentados</a
+        >
+        <a href="index.html?categoria=garrafa" class="button-categoria"
+          >Garrafas</a
+        >
+      </div>
+
+      <h2 id="categoria-titulo">Categoria</h2>
+      <div id="icon-wpp"></div>
+
+      <div id="products-list"></div>
+    </main>
+
+    <script src="script/categoria.js" type="module"></script>
+  </body>
+</html>
