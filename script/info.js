@@ -78,7 +78,7 @@ const produtos = [
   {
     id: 8,
     nome: "Dose de gin Eternity",
-    preco: "R$ 18,00",
+    preco: "$ 18,00",
     categoria: "dose",
     imagem: "img/combo-gin-eternity.jpeg",
     descricao:
@@ -187,7 +187,7 @@ if (produtosFiltrados) {
             ${produtosFiltrados.descricao}
             </p>
 
-            <a target="_blank" href='https://wa.me/5511994182226?text=Olá, eu gostaria de pedir o item: ${produtosFiltrados.nome}, ${produtosFiltrados.preco}'>Fazer pedido</a>
+            <a target="_blank" href='https://wa.me/5511994182226?text=Olá, eu gostaria de pedir o item: ${produtosFiltrados.nome} - ${produtosFiltrados.categoria}, ${produtosFiltrados.preco}'>Fazer pedido</a>
         </div>
     `;
 }
