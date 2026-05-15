@@ -187,7 +187,7 @@ if (produtosFiltrados) {
             ${produtosFiltrados.descricao}
             </p>
 
-            <a href="#">Fazer pedido</a>
+            <a target="_blank" href='https://wa.me/5511994182226?text=Olá, eu gostaria de pedir o item: ${produtosFiltrados.nome}, ${produtosFiltrados.preco}'>Fazer pedido</a>
         </div>
     `;
 }
