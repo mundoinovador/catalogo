@@ -78,7 +78,7 @@ const produtos = [
   {
     id: 8,
     nome: "Dose de gin Eternity",
-    preco: "$ 18,00",
+    preco: "R$ 18,00",
     categoria: "dose",
     imagem: "img/combo-gin-eternity.jpeg",
     descricao:
